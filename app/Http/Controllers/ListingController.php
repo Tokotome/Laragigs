@@ -19,4 +19,9 @@ class ListingController extends Controller
     {
         return view('listings.show', ['listing' => $listing]);
     }
+    
+    //show create form
+    public function create() {
+        return view('listings.create');
+    }
 }
